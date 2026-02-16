@@ -14,10 +14,10 @@ export const HERO_SUBTITLE =
   "Andrew Xiong. CEO @ Knyte. Hardware Engineer. Builder.";
 
 export const EXTERNAL_LINKS = {
-  knyte: "https://knyte.com",
-  github: "https://github.com/andrewxiong",
-  linkedin: "https://linkedin.com/in/andrewxiong",
-  email: "mailto:andrew@knyte.com",
+  knyte: "https://knyte.net",
+  github: "https://github.com/novuxx888",
+  linkedin: "https://www.linkedin.com/in/andrew-xiong-767aa5213/",
+  email: "mailto:andrewxiong@ucsb.edu",
   engineeringLogs: "#",
   kicadSchematics: "#",
 } as const;

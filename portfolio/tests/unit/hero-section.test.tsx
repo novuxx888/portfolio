@@ -44,7 +44,7 @@ describe("HeroSection", () => {
   it("has correct link for View Knyte", () => {
     render(<HeroSection />);
     const knyteLink = screen.getByLabelText("View Knyte company website");
-    expect(knyteLink).toHaveAttribute("href", "https://knyte.com");
+    expect(knyteLink).toHaveAttribute("href", "https://knyte.net");
     expect(knyteLink).toHaveAttribute("target", "_blank");
   });
 });

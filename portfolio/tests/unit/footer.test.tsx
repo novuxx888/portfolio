@@ -11,7 +11,7 @@ describe("Footer", () => {
     expect(githubLink).toBeInTheDocument();
     expect(githubLink).toHaveAttribute(
       "href",
-      "https://github.com/andrewxiong"
+      "https://github.com/novuxx888"
     );
   });
 
@@ -23,7 +23,7 @@ describe("Footer", () => {
     expect(linkedinLink).toBeInTheDocument();
     expect(linkedinLink).toHaveAttribute(
       "href",
-      "https://linkedin.com/in/andrewxiong"
+      "https://www.linkedin.com/in/andrew-xiong-767aa5213/"
     );
   });
 
@@ -31,7 +31,7 @@ describe("Footer", () => {
     render(<Footer />);
     const emailLink = screen.getByLabelText("Send an email to Andrew Xiong");
     expect(emailLink).toBeInTheDocument();
-    expect(emailLink).toHaveAttribute("href", "mailto:andrew@knyte.com");
+    expect(emailLink).toHaveAttribute("href", "mailto:andrewxiong@ucsb.edu");
   });
 
   it("renders copyright text", () => {

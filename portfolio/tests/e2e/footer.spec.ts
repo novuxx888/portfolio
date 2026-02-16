@@ -10,7 +10,7 @@ test.describe("Footer", () => {
     await expect(githubLink).toBeVisible();
     await expect(githubLink).toHaveAttribute(
       "href",
-      "https://github.com/andrewxiong"
+      "https://github.com/novuxx888"
     );
   });
 
@@ -21,7 +21,7 @@ test.describe("Footer", () => {
     await expect(linkedinLink).toBeVisible();
     await expect(linkedinLink).toHaveAttribute(
       "href",
-      "https://linkedin.com/in/andrewxiong"
+      "https://www.linkedin.com/in/andrew-xiong-767aa5213/"
     );
   });
 
@@ -30,7 +30,7 @@ test.describe("Footer", () => {
     await expect(emailLink).toBeVisible();
     await expect(emailLink).toHaveAttribute(
       "href",
-      "mailto:andrew@knyte.com"
+      "mailto:andrewxiong@ucsb.edu"
     );
   });
 });

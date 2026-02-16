@@ -60,7 +60,7 @@ describe("VenturesCard", () => {
   it("renders View Knyte link", () => {
     render(<VenturesCard />);
     const link = screen.getByLabelText("Visit Knyte company website");
-    expect(link).toHaveAttribute("href", "https://knyte.com");
+    expect(link).toHaveAttribute("href", "https://knyte.net");
   });
 
   it("renders topology diagram", () => {

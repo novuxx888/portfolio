@@ -21,7 +21,7 @@ test.describe("Hero Section", () => {
   test("displays View Knyte button", async ({ page }) => {
     const button = page.getByRole("link", { name: /View Knyte/i });
     await expect(button).toBeVisible();
-    await expect(button).toHaveAttribute("href", "https://knyte.com");
+    await expect(button).toHaveAttribute("href", "https://knyte.net");
   });
 
   test("displays Engineering Logs button", async ({ page }) => {
