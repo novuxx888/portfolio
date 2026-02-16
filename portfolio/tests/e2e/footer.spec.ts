@@ -1,0 +1,37 @@
+import { test, expect } from "@playwright/test";
+
+test.describe("Footer", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto("/");
+  });
+
+  test("displays GitHub link", async ({ page }) => {
+    const githubLink = page.getByLabel("Visit Andrew Xiong's GitHub profile");
+    await expect(githubLink).toBeVisible();
+    await expect(githubLink).toHaveAttribute(
+      "href",
+      "https://github.com/andrewxiong"
+    );
+  });
+
+  test("displays LinkedIn link", async ({ page }) => {
+    const linkedinLink = page.getByLabel(
+      "Visit Andrew Xiong's LinkedIn profile"
+    );
+    await expect(linkedinLink).toBeVisible();
+    await expect(linkedinLink).toHaveAttribute(
+      "href",
+      "https://linkedin.com/in/andrewxiong"
+    );
+  });
+
+  test("displays Email link", async ({ page }) => {
+    const emailLink = page.getByLabel("Send an email to Andrew Xiong");
+    await expect(emailLink).toBeVisible();
+    await expect(emailLink).toHaveAttribute(
+      "href",
+      "mailto:andrew@knyte.com"
+    );
+  });
+});
+
