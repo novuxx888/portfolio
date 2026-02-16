@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { piCameraNodeProject } from "@/lib/content";
+import { BASE_PATH } from "@/lib/constants";
 import { Cpu, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -46,7 +47,7 @@ export function HardwareCard() {
         {/* PCB Visual */}
         <div className="flex-1 relative min-h-[100px] opacity-50 group-hover:opacity-70 transition-opacity duration-300">
           <Image
-            src="/images/pcb-layers.svg"
+              src={`${BASE_PATH}/images/pcb-layers.svg`}
             alt={project.visual?.altText || "PCB layers diagram"}
             fill
             className="object-contain"

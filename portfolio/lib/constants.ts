@@ -1,5 +1,8 @@
 import type { SiteMetadata } from "./types";
 
+/** Must match basePath in next.config.ts */
+export const BASE_PATH = "/portfolio";
+
 export const siteMetadata: SiteMetadata = {
   title: "Andrew Xiong — Builder, Engineer, Founder",
   description:

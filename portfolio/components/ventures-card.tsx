@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { knyteProject } from "@/lib/content";
+import { BASE_PATH } from "@/lib/constants";
 import { ArrowUpRight, Zap } from "lucide-react";
 
 export function VenturesCard() {
@@ -54,7 +55,7 @@ export function VenturesCard() {
           {/* Topology diagram */}
           <div className="flex-1 relative min-h-[120px] w-full opacity-60 group-hover:opacity-80 transition-opacity duration-300">
             <Image
-              src="/images/knyte-topology.svg"
+              src={`${BASE_PATH}/images/knyte-topology.svg`}
               alt={project.visual?.altText || "Knyte topology diagram"}
               fill
               className="object-contain"

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { BASE_PATH } from "@/lib/constants";
 import { Sparkles } from "lucide-react";
 
 export function PlayCard() {
@@ -42,7 +43,7 @@ export function PlayCard() {
               className="w-24 h-24 relative"
             >
               <Image
-                src="/images/detective-raccoon.svg"
+                src={`${BASE_PATH}/images/detective-raccoon.svg`}
                 alt="Detective Raccoon — Andrew's creative easter egg"
                 fill
                 className="object-contain"
